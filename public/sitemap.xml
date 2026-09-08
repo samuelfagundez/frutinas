@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Las fotos de la Galería no tienen un nombre de archivo fijo en el sitio
+  final (se descubren solas desde src/assets/gallery/, ver
+  src/lib/galleryPhotos.ts, y Vite les agrega un hash distinto en cada
+  build) — por eso no se listan una por una acá. Solo queda la foto de
+  portada del Hero, que sí vive en public/ con nombre fijo.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://samuelfagundez.github.io/frutinas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://samuelfagundez.github.io/frutinas/gallery/banner-frutinas.jpg</image:loc>
+      <image:title>Cholado de frutas y helado de vainilla en Frutinas</image:title>
+    </image:image>
+  </url>
+</urlset>
