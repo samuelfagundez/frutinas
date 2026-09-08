@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "shortUrl": "https://maps.app.goo.gl/mL2kqE9QaVhtr9HH8",
+    "expandedUrl": "https://www.google.com/maps/place/FRUTINAS/@39.4674793,-0.375989,16.55z/data=!4m7!3m6!1s0xd6049354cad8465:0x8e65cc5402da9841!8m2!3d39.4662747!4d-0.3742933!15sCghGUlVUSU5BU1oKIghmcnV0aW5hc5IBDmljZV9jcmVhbV9zaG9wmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxT1dHRnRVblJYU0ZwUldtMXNiMDVYU2pKYWVrcHBVMWQwZVdKWVl4QULgAQD6AQQISxBH!16s%2Fg%2F11l77d5d8c?entry=tts&g_ep=EgoyMDI2MDkwMi4wIPu8ASoASAFQAw%3D%3D&skid=be027875-8d00-4e0d-a001-29bf96b62ef6&ucbcb=1",
+    "googleMapsUri": "https://maps.google.com/?cid=10260831987230742593&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "placeId": "ChIJZYStTDVJYA0RQZjaAlTMZY4",
+    "featureId": "0xd6049354cad8465:0x8e65cc5402da9841",
+    "gmapsPlaceRef": "/g/11l77d5d8c",
+    "provider": "google-places-api-v1",
+    "fetchedAt": "2026-09-08T22:03:22.991Z"
+  },
+  "name": "FRUTINAS",
+  "rating": {
+    "score": 4.7,
+    "count": 1178
+  },
+  "phone": "+34 613 22 65 39",
+  "phoneNational": "613 22 65 39",
+  "hours": {
+    "weekly": [
+      "lunes: 14:00–21:30",
+      "martes: 14:00–21:30",
+      "miércoles: 14:00–21:30",
+      "jueves: 14:00–21:30",
+      "viernes: 14:00–21:30",
+      "sábado: 14:00–21:30",
+      "domingo: 14:00–21:30"
+    ],
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 14,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 21,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 14,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 21,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 14,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 21,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 14,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 21,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 14,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 21,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 14,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 14,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 21,
+          "minute": 30
+        }
+      }
+    ],
+    "secondary": []
+  },
+  "socials": [],
+  "pricePerPerson": null,
+  "priceLevel": null,
+  "links": {
+    "website": null,
+    "menu": null,
+    "reservations": null,
+    "reservable": null,
+    "googleMaps": "https://maps.google.com/?cid=10260831987230742593&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directions": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0xd6049354cad8465:0x8e65cc5402da9841!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviews": "https://www.google.com/maps/place//data=!4m4!3m3!1s0xd6049354cad8465:0x8e65cc5402da9841!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photos": "https://www.google.com/maps/place//data=!4m3!3m2!1s0xd6049354cad8465:0x8e65cc5402da9841!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeReview": "https://www.google.com/maps/place//data=!4m3!3m2!1s0xd6049354cad8465:0x8e65cc5402da9841!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "address": {
+    "formatted": "C/ de Ciril Amorós, 1, L'Eixample, 46004 València, Valencia",
+    "short": "C/ Cirilo Amorós, 1, Valencia",
+    "components": {
+      "number": "1",
+      "street": "Carrer de Ciril Amorós",
+      "city": "València",
+      "province": "Valencia",
+      "region": "Comunidad Valenciana",
+      "country": "España",
+      "postalCode": "46004"
+    }
+  },
+  "location": {
+    "lat": 39.4662747,
+    "lng": -0.37429330000000005
+  },
+  "primaryType": "ice_cream_shop",
+  "primaryTypeLabel": "Heladería",
+  "types": [
+    "ice_cream_shop",
+    "dessert_shop",
+    "confectionery",
+    "food_store",
+    "store",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "businessStatus": "OPERATIONAL",
+  "editorialSummary": null,
+  "utcOffsetMinutes": 120,
+  "features": [
+    "Para llevar",
+    "Entrega a domicilio",
+    "Apto para niños",
+    "Aseos"
+  ],
+  "accessibility": [
+    "Entrada accesible"
+  ],
+  "paymentOptions": {
+    "acceptsCreditCards": true,
+    "acceptsDebitCards": true,
+    "acceptsCashOnly": false,
+    "acceptsNfc": true
+  },
+  "parkingOptions": null,
+  "photos": [
+    {
+      "file": "fotos/01.jpg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "attribution": "Camila Galindo",
+      "attributionUri": "https://maps.google.com/maps/contrib/109520468197828740387"
+    },
+    {
+      "file": "fotos/02.jpg",
+      "widthPx": 1170,
+      "heightPx": 2080,
+      "attribution": "FRUTINAS",
+      "attributionUri": "https://maps.google.com/maps/contrib/112891189314520629926"
+    },
+    {
+      "file": "fotos/03.jpg",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "attribution": "Saray Velez",
+      "attributionUri": "https://maps.google.com/maps/contrib/117575259740269140000"
+    },
+    {
+      "file": "fotos/04.jpg",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "attribution": "David Santiago Mora Narvaez",
+      "attributionUri": "https://maps.google.com/maps/contrib/113637149594366010088"
+    },
+    {
+      "file": "fotos/05.jpg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "attribution": "Lorena Astor",
+      "attributionUri": "https://maps.google.com/maps/contrib/111942283118012668122"
+    },
+    {
+      "file": "fotos/06.jpg",
+      "widthPx": 2448,
+      "heightPx": 3264,
+      "attribution": "Carolina Castellon",
+      "attributionUri": "https://maps.google.com/maps/contrib/105608610700168571864"
+    },
+    {
+      "file": "fotos/07.jpg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "attribution": "maira alejandra GONZALEZ ESCOBAR",
+      "attributionUri": "https://maps.google.com/maps/contrib/103563494256060026495"
+    },
+    {
+      "file": "fotos/08.jpg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "attribution": "Joise Gerardo Vega Colmenares",
+      "attributionUri": "https://maps.google.com/maps/contrib/105236189172023939414"
+    },
+    {
+      "file": "fotos/09.jpg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "attribution": "Sarah Jaramillo calle",
+      "attributionUri": "https://maps.google.com/maps/contrib/105554290767790501667"
+    },
+    {
+      "file": "fotos/10.jpg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "attribution": "Kristina Hazlingerova",
+      "attributionUri": "https://maps.google.com/maps/contrib/108258104970059629921"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "restaurante mi ama",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWARJlkdsM-C4TKiIVTZFSgc4UMfLgut0VN0KjLXchPmqaESzs=s128-c0x00000000-cc-rp-mo",
+      "authorUri": "https://www.google.com/maps/contrib/108652193530750469550/reviews",
+      "rating": 5,
+      "text": "Hace un tiempo vimos los postres de Frutinas en TikTok y, desde entonces, se nos quedó un antojo pendiente. Veníamos de Barcelona hacia Alicante y decidimos hacer una parada en Valencia únicamente para probar todo lo que ofrecen.\n\nPedimos chontaduro con sal y miel, solteritas, oblea con queso, lulada y un merengón. La lulada fue simplemente un 100/10, ¡espectacular! Todo estuvo delicioso, fresco y con un sabor auténtico que superó nuestras expectativas.\n\nQueremos agradecer especialmente a Angie y Sara por su excelente atención y por todas sus recomendaciones, que hicieron la experiencia aún mejor.\n\nSin duda, valió la pena hacer la parada. Volveremos a visitarlos cuando regresemos a Valencia. ¡Totalmente recomendado!\n\n⭐️⭐️⭐️⭐️⭐️ Sin duda, un rincón que merece la visita si quieres disfrutar de auténticos sabores colombianos en Valencia.",
+      "language": "es",
+      "relativeTime": "Hace 1 mes",
+      "publishTime": "2026-08-05T18:02:41.467876411Z"
+    },
+    {
+      "author": "Valentina Peláez",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjVku-M3cVQAxNIzEBRAUcztZQwK-c5onO11Dc0DiDKksTPn0Wo=s128-c0x00000000-cc-rp-mo-ba3",
+      "authorUri": "https://www.google.com/maps/contrib/105808772914879391729/reviews",
+      "rating": 5,
+      "text": "Super delicioso y la atención no puede ser mejor. Siempre que vengo me voy feliz… 100% recomendado",
+      "language": "es",
+      "relativeTime": "Hace 2 meses",
+      "publishTime": "2026-06-11T16:55:31.555354718Z"
+    },
+    {
+      "author": "Elena Powell Ferreres",
+      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocIixmchWcEu9vT5NgKduoliawTMNMBj2EzFSCkeoEw0Vds3Xw=s128-c0x00000000-cc-rp-mo-ba4",
+      "authorUri": "https://www.google.com/maps/contrib/115613534389478378401/reviews",
+      "rating": 5,
+      "text": "Mucha variedad de postres dulces colombianos pero el que más nos gusta es el fruticholado, el tamaño grande para dos personas es más que suficiente y si le añades un extra de queso todavía mejor. A la próxima vez que vayamos probaremos la Lulada y la ensalada de frutas que todo el mundo la estaba pidiendo y también tenía muy buena pinta.\nLas chicas son muy majas y sacan la faena muy rápido.",
+      "language": "es",
+      "relativeTime": "Hace 5 meses",
+      "publishTime": "2026-03-19T20:58:41.852611020Z"
+    },
+    {
+      "author": "Sarah Jaramillo calle",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjXTtMEGrM5j2J_lWELkjUcB3gBfrCotnDalYshCFAt4qR4L8TI=s128-c0x00000000-cc-rp-mo-ba3",
+      "authorUri": "https://www.google.com/maps/contrib/105554290767790501667/reviews",
+      "rating": 5,
+      "text": "La atención de las chicas del local fue excepcional, su dedicación y detalle en los pedidos, me encanta la variedad que tienen en alimentos, un 10 lo recomiendo",
+      "language": "es",
+      "relativeTime": "Hace 1 mes",
+      "publishTime": "2026-07-19T17:57:56.736824889Z"
+    },
+    {
+      "author": "Johnatan Moya Hernandez",
+      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocJZY11oAmj_Zm5qq59L5tp7PxEww0xgSEBvdRN7h3KKrl_PMg=s128-c0x00000000-cc-rp-mo-ba2",
+      "authorUri": "https://www.google.com/maps/contrib/110256895102081305254/reviews",
+      "rating": 5,
+      "text": "Un excelente lugar muy limpio, la atención excelente las chicas es muy amables, y el producto de calidad 10/10, Mis amigos parisinos quedaron encantados con el lugar.",
+      "language": "es",
+      "relativeTime": "Hace 1 mes",
+      "publishTime": "2026-07-27T16:50:09.478405811Z"
+    }
+  ]
+}
