@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import FloatingInstagram from "./components/FloatingInstagram";
+import FloatingMenu from "./components/FloatingMenu";
 import { RELOAD_ONCE_KEY } from "./components/RouteErrorBoundary";
 
 export default function App() {
@@ -23,7 +24,8 @@ export default function App() {
         <Outlet />
       </main>
       <Footer />
-      <FloatingWhatsApp />
+      <FloatingMenu />
+      <FloatingInstagram />
     </div>
   );
 }

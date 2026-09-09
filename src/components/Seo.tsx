@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { content, whatsappLink, WHATSAPP_RESERVE_MESSAGE } from "../content";
+import { content } from "../content";
 
 interface SeoProps {
   title?: string;
@@ -29,66 +29,60 @@ export default function Seo({ title, description, path = "" }: SeoProps) {
     inLanguage: "es",
   };
 
-  // Tipo de schema.org más específico para el rubro (heladería), subtipo
-  // de FoodEstablishment — por eso servesCuisine sigue aplicando.
-  const businessEntity: Record<string, unknown> = {
-    "@type": "IceCreamShop",
-    "@id": `${base}/#business`,
-    isPartOf: { "@id": `${base}/#website` },
-    name: content.name,
-    description: content.description,
-    image: content.gallery.map((p) => base + p.src),
-    url: content.siteUrl,
-    servesCuisine: content.cuisine,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: content.address.streetAddress,
-      addressLocality: content.address.addressLocality,
-      addressRegion: content.address.addressRegion,
-      postalCode: content.address.postalCode,
-      addressCountry: content.address.addressCountry,
-    },
-    openingHoursSpecification: content.openingHoursSchema.map((s) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: s.days,
-      opens: s.opens,
-      closes: s.closes,
-    })),
-    // WhatsApp es un canal de chat, no una página de perfil — se excluye
-    // de sameAs (que es para identidades) y en cambio se usa como acción
-    // de pedido en acceptsReservations.
-    sameAs: Object.entries(content.social)
-      .filter(([key, value]) => key !== "whatsapp" && value)
-      .map(([, value]) => value),
-    hasMap: content.mapLinkUrl,
-    acceptsReservations: whatsappLink(WHATSAPP_RESERVE_MESSAGE),
-    keywords: content.keywords.join(", "),
-  };
-
-  if (content.phone) businessEntity.telephone = content.phone;
-  if (content.email) businessEntity.email = content.email;
-  if (content.priceRange) businessEntity.priceRange = content.priceRange;
-  if (content.geo) {
-    businessEntity.geo = {
-      "@type": "GeoCoordinates",
-      latitude: content.geo.latitude,
-      longitude: content.geo.longitude,
+  // Negocio con varias tiendas: en vez de una única entidad con una sola
+  // dirección, se genera una entidad IceCreamShop por cada tienda (mismo
+  // patrón que usa Google para negocios multi-sede) — todas comparten
+  // nombre, descripción y sitio, pero cada una con su propia dirección y,
+  // si la tiene, su propio teléfono. La valoración real de Google (ficha
+  // de origen) pertenece específicamente a la tienda de Ciril Amorós, así
+  // que el aggregateRating solo se agrega a esa entidad — no se inventa
+  // para el resto.
+  const locationEntities = content.locations.map((loc) => {
+    const entity: Record<string, unknown> = {
+      "@type": "IceCreamShop",
+      "@id": `${base}/#location-${loc.id}`,
+      isPartOf: { "@id": `${base}/#website` },
+      name: `${content.name} ${loc.city}${loc.neighborhood ? ` - ${loc.neighborhood}` : ""}`,
+      branchOf: { "@type": "Organization", name: content.name },
+      description: content.description,
+      image: content.gallery.map((p) => base + p.src),
+      url: content.siteUrl,
+      servesCuisine: content.cuisine,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: loc.address,
+        addressCountry: "ES",
+      },
+      openingHoursSpecification: content.openingHoursSchema.map((s) => ({
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: s.days,
+        opens: s.opens,
+        closes: s.closes,
+      })),
+      hasMap: loc.mapLinkUrl,
+      keywords: content.keywords.join(", "),
     };
-  }
-  // Se incluye aggregateRating porque acá SÍ tenemos ratingValue y
-  // ratingCount juntos (ambos vienen de la misma ficha de Google) — Google
-  // exige los dos juntos para que el markup sea válido en Search Console.
-  if (content.rating) {
-    businessEntity.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: content.rating.value,
-      reviewCount: content.rating.count,
-    };
-  }
+    if (loc.phoneDisplay) entity.telephone = `+${loc.whatsappNumber}`;
+    if (loc.geo) {
+      entity.geo = {
+        "@type": "GeoCoordinates",
+        latitude: loc.geo.latitude,
+        longitude: loc.geo.longitude,
+      };
+    }
+    if (loc.id === "eixample" && content.rating) {
+      entity.aggregateRating = {
+        "@type": "AggregateRating",
+        ratingValue: content.rating.value,
+        reviewCount: content.rating.count,
+      };
+    }
+    return entity;
+  });
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [websiteEntity, businessEntity],
+    "@graph": [websiteEntity, ...locationEntities],
   };
 
   return (

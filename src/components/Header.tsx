@@ -37,12 +37,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden shrink-0 items-center gap-3 lg:flex">
-          <a
-            href={contactHref()}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn-secondary-sm"
-          >
+          <a href={contactHref()} className="btn-secondary-sm">
             Contáctanos
           </a>
           <a
@@ -109,8 +104,6 @@ export default function Header() {
               </a>
               <a
                 href={contactHref()}
-                target="_blank"
-                rel="noreferrer noopener"
                 className="btn-secondary w-full"
                 onClick={() => setOpen(false)}
               >

@@ -13,19 +13,22 @@ export default function Footer() {
             <p className="mt-2 text-sm text-white/80">{content.tagline}</p>
           </div>
           <div>
-            <p className="font-semibold">Contacto</p>
+            <p className="font-semibold">Nuestras tiendas</p>
+            {/* Las direcciones y teléfonos solo se listan en la sección
+                Ubicación y contacto (varias tiendas) — acá solo enlazamos
+                a esa sección en vez de repetirlas. */}
             <p className="mt-2 text-sm text-white/80">
-              {content.address.full}
+              {content.locations.length} tiendas en València, Madrid y
+              Alicante.
             </p>
-            {content.phone && (
-              <p className="text-sm text-white/80">
-                <a href={`tel:${content.phone.replace(/\s/g, "")}`}>
-                  {content.phoneDisplay}
-                </a>
-              </p>
-            )}
+            <a
+              href="#ubicacion"
+              className="mt-1 inline-block text-sm font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white"
+            >
+              Ver ubicación y contacto →
+            </a>
             {content.email && (
-              <p className="text-sm text-white/80">
+              <p className="mt-2 text-sm text-white/80">
                 <a href={`mailto:${content.email}`}>{content.email}</a>
               </p>
             )}
